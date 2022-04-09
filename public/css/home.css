@@ -1,0 +1,599 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    background-image: url('https://assets.scola.id/frontend/images/login/bg-login.jpg');
+}
+
+.page-siswa {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-siswa .page-content {
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 100%;
+    height: 400px;
+    margin: 0 200px;
+}
+
+.page-siswa .page-content .left-content {
+    background-color: white;
+    border-radius: 20px 0 0 20px;
+    width: 40%;
+    height: 100%;
+}
+
+.page-siswa .page-content .left-content h5 {
+    margin-left: 30px;
+}
+
+.page-siswa .page-content .left-content p {
+    font-size: 14px;
+    margin-left: 30px;
+    width: 300px;
+}
+
+.page-siswa .page-content .left-content .logo {
+    width: 100%;
+    padding: 30px 0 20px 25px;
+}
+
+.page-siswa .page-content .left-content .panduan {
+    text-decoration: none;
+    color: royalblue;
+    font-size: 14px;
+    margin-left: 290px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.page-siswa .page-content .left-content .panduan:hover {
+    font-weight: 500;
+}
+
+.page-siswa .page-content .right-content {
+    background-color: royalblue;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    left: 40%;
+    top: -100%;
+    border-radius: 0 20px 20px 0;
+}
+
+.page-siswa .page-content .right-content .image img {
+    width: 100%;
+    height: 400px;
+    border-radius: 0 20px 20px 0;
+}
+
+.page-siswa .page-content .right-content .waktu {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 80px;
+    left: 45%;
+    border-radius: 0 20px 0 20px;
+}
+
+.page-siswa .page-content .right-content .waktu .datetime{
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    width: 300px;
+    margin-top: -35px;
+    /* margin-left: 250px; */
+    padding-right: -20px;
+}
+
+.page-siswa .page-content .right-content .waktu .datetime .date{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.page-siswa .page-content .right-content .waktu .datetime .time{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-siswa .page-content .right-content .waktu .datetime .time span:not(:last-child){
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.page-siswa .page-content .right-content .waktu .datetime .time span:last-child{
+    background: #2E94E3;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+/* Login */
+.page-siswa .page-content .left-content .login {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    padding: 0 20px;
+    margin-top: 15px;
+}
+
+.page-siswa .page-content .left-content .wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.page-siswa .page-content .left-content .wrapper .title{
+    color: royalblue;
+    font-size: 20px;
+    font-weight: 750;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.page-siswa .page-content .left-content .wrapper form {
+    padding: 5px 15px;
+}
+
+.page-siswa .page-content .left-content .wrapper form .row i{
+    width: 50px;
+    height: 50px;
+    color: royalblue;
+    font-size: 18px;
+    margin-right: -10px;
+    padding-top: 8px;
+}
+
+.page-siswa .page-content .left-content .wrapper form .row input{
+    height: 35px;
+    width: 82%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.page-siswa .page-content .left-content form .row input:focus{
+    border: 2px solid royalblue;
+}
+
+.page-siswa .page-content .left-content form .row input::placeholder{
+    color: grey;
+}
+
+.page-siswa .page-content .left-content form .row input:valid{
+    border-bottom: 2px solid royalblue;
+}
+
+.page-siswa .page-content .left-content .wrapper form .button input{
+    width: 97%;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background: royalblue;
+}
+
+.page-siswa .page-content .left-content .wrapper form .button input:hover{
+    background: rgb(55, 89, 190);
+}
+
+.page-siswa .page-content .left-content .wrapper form .alert {
+    height: 10px;
+}
+
+.page-siswa .page-content .left-content .wrapper form .alert li {
+    list-style: none;
+    font-size: 12px;
+    margin-top: -9px;
+    margin-left: -6px;
+}
+
+/* End login form */
+
+
+/* Admin Bendahara Login */
+.page-petugas {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-petugas .page-content {
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 100%;
+    height: 400px;
+    margin: 0 100px;
+}
+
+.page-petugas .page-content .left-content {
+    background-color: royalblue;
+    border-radius: 20px 0 0 20px;
+    width: 60%;
+    height: 100%;
+}
+
+.page-petugas .page-content .left-content .image img {
+    width: 100%;
+    height: 400px;
+    border-radius: 20px 0 0 20px;
+}
+
+.page-petugas .page-content .right-content {
+    background-color: white;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    left: 60%;
+    top: -100%;
+    border-radius: 0 20px 20px 0;
+}
+
+.page-petugas .page-content .right-content h3 {
+    text-align: center;
+    font-weight: 500;
+    color: royalblue;
+    border-top: 1px solid royalblue;
+    margin: 0 60px;
+    padding-top: 15px;
+}
+
+.page-petugas .page-content .right-content .logo {
+    width: 100%;
+    padding: 30px 0 20px 25px;
+    margin-left: 105px;
+}
+
+
+/* Login */
+.page-petugas .page-content .right-content .login {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.page-petugas .page-content .right-content .wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.page-petugas .page-content .right-content .wrapper .title{
+    color: royalblue;
+    font-size: 20px;
+    font-weight: 750;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.page-petugas .page-content .right-content .wrapper form {
+    padding: 10px 15px;
+}
+
+.page-petugas .page-content .right-content .wrapper form .row i{
+    width: 50px;
+    height: 50px;
+    color: royalblue;
+    font-size: 18px;
+    margin-right: -10px;
+    padding-top: 8px;
+}
+
+.page-petugas .page-content .right-content .wrapper form .row input{
+    height: 35px;
+    width: 82%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.page-petugas .page-content .right-content form .row input:focus{
+    border: 2px solid royalblue;
+}
+
+.page-petugas .page-content .right-content form .row input::placeholder{
+    color: grey;
+}
+
+.page-petugas .page-content .right-content form .row input:valid{
+    border-bottom: 2px solid royalblue;
+}
+
+.page-petugas .page-content .right-content .wrapper form .button input{
+    width: 100%;
+    height: 45px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background: royalblue;
+}
+
+.page-petugas .page-content .right-content .wrapper form .button input:hover{
+    background: rgb(55, 89, 190);
+}
+
+.page-petugas .page-content .right-content .wrapper form .alert {
+    height: 10px;
+}
+
+.page-petugas .page-content .right-content .wrapper form .alert li {
+    list-style: none;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-left: -2px;
+}
+
+.page-petugas .page-content .right-content .wrapper form .alert2 {
+    height: 40px;
+}
+
+.page-petugas .page-content .right-content .wrapper form .alert2 li {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: -5px;
+    padding-top: 2px;
+}
+/* End Petugas Login */
+
+.back {
+    font-size: 35px;
+    position: absolute;
+    padding: 10px 20px;
+    /* background-color: white; */
+}
+
+.panduan-user h3 {
+    position: absolute;
+    color: royalblue;
+    /* margin-left: 115px; */
+    margin-top: 15px;
+    /* text-align: center; */
+}
+
+.panduan-user {
+    display: flex;
+    justify-content: center;
+}
+
+.panduan-user .background .isi .api {
+    width: 900px;
+    height: 1000px;
+}
+
+.panduan-user .background .isi .qr {
+    display: none;
+}
+
+/* .panduan-user .background .isi h1 {
+    display: none;
+} */
+
+.panduan-user .background {
+    background-color: white;
+    width: 1000px;
+    height: auto;
+    min-height: 520px;
+    margin: 60px 100px;
+    padding: 30px 35px;
+    border-radius: 20px;
+    box-shadow: 3px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.panduan-user .background .isi li {
+    list-style: none;
+}
+
+.panduan-user .background .isi {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media only screen and (max-width: 720px) {
+    .page-siswa .page-content {
+        height: 370px;
+        margin-top: 70px;
+    }
+
+    .page-siswa .page-content .left-content {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .page-siswa .page-content .left-content h5 {
+        font-size: 14px;
+    }
+    
+    .page-siswa .page-content .left-content p {
+        font-size: 12px;
+    }
+
+    .page-siswa .page-content .left-content .wrapper form .row i{
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    
+    .page-siswa .page-content .left-content .wrapper form .row input{
+        height: 30px;
+        /* width: 100%; */
+        font-size: 12px;
+        margin-left: 20px;
+        margin-top: 3px;
+        margin-bottom: 10px;
+    }
+
+    .page-siswa .page-content .left-content .wrapper form .button input{
+        width: 101%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .page-siswa .page-content .left-content .panduan {
+        font-size: 12px;
+        margin-left: 250px;
+        margin-top: 10px;
+    }
+
+    .page-siswa .page-content .right-content {
+        display: none;
+    }
+
+    .page-siswa .page-content .left-content .wrapper form .alert {
+        height: 10px;
+        margin-top: 7px;
+    }
+
+    .page-siswa .page-content .left-content .wrapper form .alert li {
+        /* list-style: none; */
+        font-size: 10px;
+    }
+
+    .back {
+        font-size: 25px;
+    }
+
+    .panduan-user h3 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .panduan-user .background .isi .api {
+        display: none;
+    }
+
+    .panduan-user .background .isi .qr {
+        display: block;
+        background: #fff;
+        padding: 0 30px;
+        height: 380px;
+    }
+
+    .panduan-user .background .isi .qr img {
+        width: 250px;
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    .panduan-user .background .isi .qr h1 {
+        display: block;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 25px;
+        font-size: 44px;
+        font-weight: bold;
+    }
+
+    .panduan-user .background {
+        background: none;
+        box-shadow: none;
+    }
+}
+
+/* @media only screen and (min-width: 730px) {
+    .page-siswa .page-content {
+        width: 350px;
+        height: 350px;
+        margin-left: -200px;
+    }
+
+    .page-siswa .page-content .left-content {
+        width: 100%;
+    }
+
+    .page-siswa .page-content .left-content h5 {
+        font-size: 14px;
+    }
+    
+    .page-siswa .page-content .left-content p {
+        font-size: 12px;
+    }
+
+    .page-siswa .page-content .left-content .wrapper form .row i{
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .page-siswa .page-content .left-content .wrapper form .row input{
+        height: 25px;
+        font-size: 12px;
+        margin-left: 20px;
+        margin-top: 3px;
+        margin-bottom: 10px;
+    }
+
+    .page-siswa .page-content .left-content .wrapper form .button input{
+        width: 101%;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .page-siswa .page-content .left-content .panduan {
+        font-size: 12px;
+        margin-left: 240px;
+        margin-top: 10px;
+    }
+
+    .page-siswa .page-content .right-content {
+        width: 125%;
+        left: 100%;
+    }
+
+    .page-siswa .page-content .right-content .waktu {
+        left: 42%;
+        height: 70px;
+    }
+
+    .page-siswa .page-content .right-content .waktu .datetime{
+        width: 230px;
+    }
+
+    .page-siswa .page-content .right-content .waktu .datetime .date{
+        font-size: 12px;
+    }
+    
+    .page-siswa .page-content .right-content .waktu .datetime .time{
+        font-size: 18px;
+    }
+
+    .page-siswa .page-content .right-content .image img {
+        height: 350px;
+    }
+} */

@@ -1,0 +1,41 @@
+tambah siswa
+1. membuat siswa
+2. membuat pengguna
+3. membuat tahunpelajaran untuk 3 tahun
+4. membuat tunggakan untuk 3 tahun
+5. membuat spp untuk 3 tahun
+6. membuat sppkelas sesuai tapel dan id_kelas. untuk jumlah kelas x tapel
+7. membuat spptahun sesuai tapel dan tingkat. untuk 1 tahun pertama
+8. membuat sppangkatan sesuai tahun angkatan. untuk 3 tahun
+(jika detail biaya telah ditentukan)
+1. tabel siswa hanya berisi informasi untuk 1 tahun pertama
+2. 
+3. 
+4. tunggakan diisi langsung selama 3 tahun. jika telah ditentukan 3 tahun
+5. spp diisi langsung selama 3 tahun. jika sudah ditentukan 3 tahun
+6. sppkelas langsung diisi selama 1 tahun. tingkat dan tapel yg sama, diisi  jumlah yg sama. diisi dengan spp siswa pada tahun pertama
+7. spptahun langsung diisi selama 1 tahun. kelas yang sama, diisi jumlah yg sama. diisi dengan spp siswa pada tahun pertama
+8. sppangkatan langsung diisi selama 1 tahun. angkatan yg sama. diisi dengan jumlah spp siswa pada tahun pertama
+
+tambah spp
+1. menambahkan tahun pelajaran yg dimasukkan
+2. menambahkan sppkelas jika ada tahun pelajaran baru (tapel x kelas)
+3. update biayasiswa dengan menjumlahkan tahun sebelumnya (karena siswa bisa naik kelas)
+4. update spp siswa 
+5. update tunggakansiswa dengan menjumlahkan tunggakan sebelumnya dengan yg baru (karena siswa bisa naik kelas)
+6. update sppkelas dengan menjumlahkan spp siswa dan tunggakan siswa 
+7. update sppTahun dengan tapel dan tingkat yg sama (gabungan sppkelas)
+8. update sppAngkatan dengan angkatan yg sama
+
+
+tambah kelas
+2. Tambah kelas,nambah juga sppkelas pertapel yg sudah ada
+
+
+
+
+
+
+
+
+

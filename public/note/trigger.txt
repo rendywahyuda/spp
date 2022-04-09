@@ -1,0 +1,54 @@
+Trigger Kelas :
+CREATE TRIGGER `insert_kelas` AFTER INSERT ON `kelas` 
+FOR EACH ROW INSERT INTO log_kelas 
+VALUES(null, '', new.kelas, '', new.tingkat, "Admin", "Inserted", NOW());
+
+CREATE TRIGGER `update_kelas` AFTER UPDATE ON `kelas` 
+FOR EACH ROW INSERT INTO log_kelas 
+VALUES(null, old.kelas, new.kelas, old.tingkat, new.tingkat, "Admin", "Updated", NOW());
+
+CREATE TRIGGER `delete_kelas` AFTER DELETE ON `kelas` 
+FOR EACH ROW INSERT INTO log_kelas 
+VALUES(null, old.kelas, '', old.tingkat, '', "Admin", "Deleted", NOW());
+
+
+Trigger Tahun Pelajaran :
+CREATE TRIGGER `insert_tahun_pelajaran` AFTER INSERT ON `tahun_pelajaran` 
+FOR EACH ROW INSERT INTO log_tahun_pelajaran 
+VALUES(null, '', new.tahun_pelajaran, "Admin", "Inserted", NOW());
+
+CREATE TRIGGER `update_tahun_pelajaran` AFTER UPDATE ON `tahun_pelajaran` 
+FOR EACH ROW INSERT INTO log_tahun_pelajaran 
+VALUES(null, old.tahun_pelajaran, new.tahun_pelajaran, "Admin", "Updated", NOW());
+
+CREATE TRIGGER `delete_tahun_pelajaran` AFTER DELETE ON `tahun_pelajaran` 
+FOR EACH ROW INSERT INTO log_tahun_pelajaran 
+VALUES(null, old.tahun_pelajaran, '', "Admin", "Deleted", NOW());
+
+
+Trigger Bendahara :
+CREATE TRIGGER `insert_bendahara` AFTER INSERT ON `bendahara` 
+FOR EACH ROW INSERT INTO log_bendahara 
+VALUES(null, '', new.nip, '', new.nama, '', new.no_telepon, "Admin", "Inserted", NOW());
+
+CREATE TRIGGER `update_bendahara` AFTER UPDATE ON `bendahara` 
+FOR EACH ROW INSERT INTO log_bendahara 
+VALUES(null, old.nip, new.nip, old.nama, new.nama, old.no_telepon, new.no_telepon, "Admin", "Updated", NOW());
+
+CREATE TRIGGER `delete_bendahara` AFTER DELETE ON `bendahara` 
+FOR EACH ROW INSERT INTO log_bendahara 
+VALUES(null, old.nip, '', old.nama, '', old.no_telepon, '', "Admin", "Deleted", NOW());
+
+
+Trigger Siswa :
+CREATE TRIGGER `insert_siswa` AFTER INSERT ON `siswa`
+FOR EACH ROW INSERT INTO log_siswa 
+VALUES(null, '', new.nis, '', new.nama, '', new.jurusan, "Admin", "Inserted", NOW());
+
+CREATE TRIGGER `update_siswa` AFTER UPDATE ON `siswa` 
+FOR EACH ROW INSERT INTO log_siswa 
+VALUES(null, old.nis, new.nis,  old.nama, new.nama, old.jurusan, new.jurusan, "Admin", "Updated", NOW());
+
+CREATE TRIGGER `delete_siswa` AFTER DELETE ON `siswa` 
+FOR EACH ROW INSERT INTO log_siswa 
+VALUES(null, old.nis, '',  old.nama, '', old.jurusan, '', "Admin", "Deleted", NOW());

@@ -1,0 +1,81 @@
+Store Procedure Menampilkan Data Siswa :
+CREATE PROCEDURE showSiswa()
+SELECT nis, nama, jurusan FROM siswa;
+
+Memanggil procedure nya :
+CALL showSiswa();
+
+
+
+Store Procedure Menampilkan Data Bendahara :
+CREATE PROCEDURE showBendahara()
+SELECT nip, nama, no_telepon FROM bendahara;
+
+Memanggil procedure nya :
+CALL showBendahara();
+
+
+
+Store Procedure Menampilkan Data Kelas :
+CREATE PROCEDURE showKelas()
+SELECT kelas, tingkat FROM kelas;
+
+Memanggil procedure nya :
+CALL showKelas();
+
+Store Procedure Insert Kelas :
+CREATE PROCEDURE insertKelas(id_kelasKls INT(5), kelasKls VARCHAR(100), tingkatKls VARCHAR(5))
+INSERT INTO kelas VALUES (id_kelasKls, kelasKls, tingkatKls);
+
+Memanggil procedure nya :
+CALL insertKelas(id_kelasKls, kelasKls, tingkatKls);
+Contoh -> CALL insertKelas(null, "X - RPL 1","10");
+
+Store Procedure Update Kelas :
+CREATE PROCEDURE updateKelas(id_kelasKls INT(5), kelasKls VARCHAR(100), tingkatKls VARCHAR(5))
+UPDATE kelas SET kelas = kelasKls, tingkat = tingkatKls WHERE id_kelas = id_kelasKls;
+
+Memanggil procedure nya :
+CALL updateKelas(id_kelasKls, kelasKls, tingkatKls);
+Contoh -> CALL updateKelas(2, "X - RPL 3", "11");
+
+Store Procedure Delete Kelas :
+CREATE PROCEDURE deleteKelas(id_kelasKls INT(5))
+DELETE FROM kelas WHERE id_kelas = id_kelasKls;
+
+Memanggil procedure nya :
+CALL deleteKelas(id_kelasKls);
+Contoh -> CALL deleteKelas(2);
+
+
+
+Store Procedure Menampilkan Data Tahun Pelajaran :
+CREATE PROCEDURE showTahunPelajaran()
+SELECT tahun_pelajaran FROM tahun_pelajaran;
+
+Memanggil procedure nya :
+CALL showTahunPelajaran();
+
+Store Procedure Insert Tahun Pelajaran :
+CREATE PROCEDURE insertTahunPelajaran(id_tahun_pelajaranTapel INT(5), tahun_pelajaranTapel VARCHAR(10))
+INSERT INTO tahun_pelajaran VALUES (id_tahun_pelajaranTapel, tahun_pelajaranTapel);
+
+Memanggil procedure nya :
+CALL insertTahunPelajaran(id_tahun_pelajaranTapel, tahun_pelajaranTapel);
+Contoh -> CALL insertTahunPelajaran(null, "2020-2021");
+
+Store Procedure Update Tahun Pelajaran :
+CREATE PROCEDURE updateTahunPelajaran(id_tahun_pelajaranTapel INT(5), tahun_pelajaranKls VARCHAR(10))
+UPDATE tahun_pelajaran SET tahun_pelajaran = tahun_pelajaranTapel WHERE id_tahun_pelajaran = id_tahun_pelajaranTapel;
+
+Memanggil procedure nya :
+CALL updateTahunPelajaran(id_tahun_pelajaranTapel, tahun_pelajaranTapel);
+Contoh -> CALL updateTahunPelajaran(1, "2022-2023");
+
+Store Procedure Delete Tahun Pelajaran :
+CREATE PROCEDURE deleteTahunPelajaran(id_tahun_pelajaranTapel INT(5))
+DELETE FROM tahun_pelajaran WHERE id_tahun_pelajaran = id_tahun_pelajaranTapel;
+
+Memanggil procedure nya :
+CALL deleteTahunPelajaran(id_tahun_pelajaranTapel);
+Contoh -> CALL deleteTahunPelajaran(1);

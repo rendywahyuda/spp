@@ -1,0 +1,11 @@
+View Tunggakan Siswa :
+CREATE VIEW tunggakanSiswa AS
+SELECT siswa.id_siswa, nis, nama, jurusan, tingkat_kelas, tunggakan
+FROM siswa INNER JOIN tunggakan
+ON siswa.id_siswa = tunggakan.id_siswa;
+
+Memanggilnya : SELECT * FROM tunggakanSiswa
+               SELECT nis, nama, jurusan, tingkat_kelas, tunggakan FROM tunggakanSiswa WHERE nis=nis nya
+
+Menghapusnya :
+DROP VIEW tunggakanSiswa

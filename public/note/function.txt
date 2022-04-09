@@ -1,0 +1,37 @@
+Function Menghitung Jumlah Siswa Berdasarkan id_kelas :
+DELIMITER $$
+CREATE FUNCTION jumlahSiswa(id_kls INT)
+RETURNS INT DETERMINISTIC
+BEGIN
+DECLARE jumlah INT;
+SELECT COUNT(id_kelas) AS kelas INTO jumlah FROM siswa WHERE id_kelas=id_kls;
+RETURN jumlah;
+END $$
+
+Memanggilnya :
+SELECT jumlahSiswa(id_kelas)
+contoh -> SELECT jumlahSiswa(1)
+
+
+Function Menampilkan NIS dari Nama Siswa dan Nama Siswa dari NIS:
+DELIMITER $$
+CREATE FUNCTION nis_siswa(nama VARCHAR(100)) 
+RETURNS VARCHAR(100) DETERMINISTIC 
+BEGIN 
+DECLARE nis_siswa VARCHAR(15); 
+SELECT siswa.nis INTO nis_siswa FROM siswa WHERE siswa.nama=nama; 
+RETURN Concat(nis_siswa, ' | ', nama); 
+END $$
+
+Pemanggilan -> SELECT nis_siswa('nama')
+
+DELIMITER $$
+CREATE FUNCTION nama_siswa(nis VARCHAR(100)) 
+RETURNS VARCHAR(100) DETERMINISTIC 
+BEGIN
+DECLARE nama_siswa VARCHAR(50);
+SELECT siswa.nama INTO nama_siswa FROM siswa WHERE siswa.nis=nis; 
+RETURN Concat(nama_siswa, ' | ', nis); 
+END $$
+
+Pemanggilan -> SELECT nama_siswa('nis')
